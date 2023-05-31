@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "WHOIS Domain Query",
+  "version": "1.0",
+  "description": "A Chrome extension that queries WHOIS for the current domain.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "http://*/*",
+    "https://*/*"
+  ],  
+"background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
+
+
